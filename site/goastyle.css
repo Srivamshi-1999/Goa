@@ -1,0 +1,74 @@
+body
+{
+   background-color:;
+  background-repeat: no-repeat, repeat;
+  background-size:2080px 2080px;
+  background-image:  url("http://www.gqindia.com/wp-content/uploads/2015/03/rishikonda-beach-vishakapatnam.jpg");
+  background-blend-mode: lighten;
+
+
+}
+
+.heading
+{ 
+  text-align:center;
+  border:solid;
+  border-color:black;
+  font-family: "Courier New", Courier, 
+   monospace;
+    margin: 0px 2px 15px 2px;
+  padding: 0px 17px 5px 17px;
+  border-radius: 25px;
+   border-width: 4px;
+  font-family: "Courier New", Courier, monospace;
+ 
+}
+#goalogo{
+  border:solid;
+  border-color:black;
+  background-color:black;
+}
+.diffparts
+{
+  text-align:center;
+  border:solid;
+  border-color:black;
+  font-family: "Courier New", Courier, 
+   monospace;
+    margin: 0px 2px 15px 2px;
+  padding: 0px 17px 5px 17px;
+  border-radius: 25px;
+   border-width: 4px;
+  
+}
+#northimg
+{
+  width:60%;
+  height:30%;
+  border:solid;
+  border-color:black;
+  float:center;
+
+  
+}
+th
+{
+  text-align:left;
+}
+.table
+{
+  border:solid;
+  border-color:black;
+  font-family: "Courier New", Courier, 
+   monospace;
+    margin: 0px 2px 15px 2px;
+  padding: 0px 17px 5px 17px;
+  border-radius: 25px;
+   border-width: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+.heading2
+{
+    font-family: "Courier New", Courier, monospace;
+
+}

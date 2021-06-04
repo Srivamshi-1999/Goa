@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Personal poll</title>
+        <style>
+            body
+            {
+                background-image: url("https://cdn.wallpapersafari.com/7/3/qAM1Rl.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #hh{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(68, 68, 70);
+    
+    text-align: center;
+    letter-spacing: 2px;
+    background-color:white;
+    opacity: 0.8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+   
+}
+.vote
+{
+    background-color:white;
+    opacity: 0.8;
+
+}
+h4{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button
+{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+        </style>
+    </head>
+    <body>
+        <h1 id="hh">Welcome to the Challenges</h1>
+        
+        <div class="vote">
+            <h4>Vote For your Contestants</h4>
+            <p style="letter-spacing: 1px;">Here are the contestants and go through the challenges and vote for the best</p>
+            <div class="card-columns">
+            <div class="card" style="width:150px; height: 200px; background-color: black;">
+                <img class="card-img-top" src="vamshi.jpeg" alt="cardimage" style="width: 100%; height: 70%;">
+                <div class="card-body">
+                   <h4 class="card-title" style="color: white;font-size: medium;">Srivamshi</h4>
+                
+                   </div>
+    
+                   </div>
+                   <div class="card" style="width:150px; height: 200px; background-color: black;">
+                    <img class="card-img-top" src="swapnil.jpeg" alt="cardimage" style="width: 100%; height: 70%;">
+                    <div class="card-body">
+                       <h4 class="card-title" style="color: white;font-size: medium;">Swapnil</h4>
+                    
+                       </div>
+        
+                       </div>
+                       <div class="card" style="width:150px; height: 200px; background-color: black;">
+                        <img class="card-img-top" src="megha.jpeg" alt="cardimage" style="width: 100%; height: 70%;">
+                        <div class="card-body">
+                           <h4 class="card-title" style="color: white;font-size: medium;">Megha</h4>
+                        
+                           </div>
+            
+                           </div>
+                           <div class="card" style="width:150px; height: 200px; background-color: black;">
+                            <img class="card-img-top" src="sahithya.jpeg" alt="cardimage" style="width: 100%; height: 70%;">
+                            <div class="card-body">
+                               <h4 class="card-title" style="color: white; font-size: medium;">Sahithya</h4>
+                            
+                               </div>
+                
+                               </div>
+                               <div class="card" style="width:150px; height: 200px; background-color: black;">
+                                <img class="card-img-top" src="jk.png" alt="cardimage" style="width: 100%; height: 70%;">
+                                <div class="card-body">
+                                   <h4 class="card-title" style="color: white;font-size: medium;">Jahnavi</h4>
+                                
+                                   </div>
+                    
+                                   </div>
+                                   <div class="card" style="width:150px; height: 200px; background-color: black;">
+                                    <img class="card-img-top" src="jazz.png" alt="cardimage" style="width: 100%; height: 70%;">
+                                    <div class="card-body">
+                                       <h4 class="card-title" style="color: white;font-size: medium;">Janhavi Inamdar</h4>
+                                    
+                                       </div>
+                        
+                                       </div>
+                                       
+                                       
+                           
+        </div>
+        <div class="card-columns">
+
+            <div class="card" style="width:150px; height: 200px; background-color: black;">
+                <img class="card-img-top" src="jazz.png" alt="cardimage" style="width: 100%; height: 70%;">
+                <div class="card-body">
+                   <h4 class="card-title" style="color: white;font-size: medium;">Sushma</h4>
+                
+                   </div>
+    
+                   </div>
+                   <div class="card" style="width:150px; height: 200px; background-color: black;">
+                    <img class="card-img-top" src="akhil.png" alt="cardimage" style="width: 100%; height: 70%;">
+                    <div class="card-body">
+                       <h4 class="card-title" style="color: white;font-size: medium;">Akhil kodali</h4>
+                    
+                       </div>
+        
+                       </div>
+
+        </div>
+        
+        <h5>This week Challenges:</h5>
+         <h5>Choose the best one out of the below slide show.</h5>
+         <p>This challenge goes live now here are the participants with there photos and some are unavailable due to some resaons 
+             remaining are here to entertain you and based on photos you can vote here or else if it does not work's "use the link provided by them".
+         </p>
+         <div class="slideshow-container">
+         
+           <!-- Full-width images with number and caption text -->
+           <div class="mySlides fade">
+             <div class="numbertext">1 / 5</div>
+             <img src="https://lh3.googleusercontent.com/wy5g9GUSFQl5WFdJJOxuGXf2v9L-Zobo4rG1jLtkpWV3TLAy3zL7lZ3OpBjFSTbZ1va03dIcKbWaXRHrRRW1hElTNWigw1rZae4o6UCNZCe_cfXbIcFmBRGkY20MDnfAq72OWDGa0QiPxtzU3haeY2mQSlQwOmib_VPSCSKdYD41yNL18mamzB5x_qYeJznVZ7ZQx2vKuJZEoTp6Y0_b5IqNVOaH5rkC-8cQVI8VvPdCCDqweSnVE_isc9tiqKDiMm0NFOKzM6EIHIYZdZ3EtH7jyOhwlk1NeBAT-GMotu_Kf0r5izNU3TA9izQijUksmi7lNnBctYojWixKkHgJxppLDE2b6pK62_RN1bXUoTutfKhH2BIXV7T2rIwJiWrghvMFacCzt1PG_rjBSBIH_h9JHfqJaXIHVGw7W7_11XLv93m98hIopXwD7VuI_6LF1Jr4LWiPXvIw8DaHBjhzUn_46QhTcQC8kyuh4jeg_PNn8TIOV6FTRlxkmiF-gkTh3RG6GQQU-xiY1rPpC6RkGSD4I8EUoYmVdTCHfCGALUZ9pMGOc6flO9szAgMQ0-R4DYpgH4thFPCemR8Cv5_ICg7gn7YFXhAkLXPLaBKYNN16PItwbUbr7OrJKLkWBrMqK5OOd-EXBPmD81jRTOjYZU6AFNQsy7BiDKdkuplqRKaHpC8OKlX-rDtJssjCz5A52jCaA_EGMRKKSKO4LK0eTgup=w624-h953-no?authuser=0" style="width:100%">
+             <div class="text">Swapnil Challenge1</div>
+           </div>
+         
+           <div class="mySlides fade">
+             <div class="numbertext">2 / 5</div>
+             <img src="https://lh3.googleusercontent.com/09KHKXwrT5PvOrvgNKvgYSLE0n6m77EHE8rOS6NMbHnh3eq-ewhd13Jift93s72Mmg1Vo2oqEjAGtaag63Lyw3OX_Lmsi8hUt5pxc3qEgSkxBYWDidYpB-foFRNhMlXhgS0xct_iyNjSnuic7CICjrArHTDfwq4NGGpgn2vPOt0TJnEdwzpxMoQnQT5LsMkZ_R8Hgh-OcmhvG95Ud89rfbziuBxA9U2ePqGGAzDlHcEL8ppYtF8DvimJNDIUKKVw-BP6VDch6Jjmk8yWtE2uRhJYPGswLdpDLimR_kPgehwOOn48ERElAJ02bsSCrFpGV4XLweDt6pYTY9iAnBI6dCSxNWdE6Gd_i6FKt8vfabKVOkCkloZBKwyny8L7cgDjSVc9Uawn3FIzO-ohB-w-d8G9Gida3wcuSs6qfamzyAnhrfo9jJ7q2Xz8s693tsRTPG4SN4BjM5L7o_gGN6OzdLwe2dr1ZDqFqD5JmmicHSG0mi72HpT3RM8lRwqeOESTq2gbCFhwiFUavp6D-bwDS7ODbySjW_jl-TCFvP1kDlse_Nqnd_uSpuVpOr2IDoN14SfgYbNGlnv5Zr6ZBU2O9CpzM1Ml5rKVdA2zpWACeMNFCX8gZGNGwHm4c5NbS5Sye8MVBVHnPYfIOJzL3WYSJ5nn_gusil_EZfggR8tsfOv2z5xUj3NoLMlCgm0Skp2T8x0qmxG2Q6C8PY5My2N4lQ8O=w561-h994-no?authuser=0" style="width:100%">
+             <div class="text">Sahithya Challenge1</div>
+           </div>
+         
+           <div class="mySlides fade">
+             <div class="numbertext">3 / 5</div>
+             <img src="https://lh3.googleusercontent.com/3Ip5-taJuUZ7bKO7aPLTrc95UlpHpLu8AkURHUNmHhLbwA6cMPjDWqwuBJjZYvgbrY9AO3zNvBopFAh_MbpoY1l5ocZGidOeTl69zc3nxXZQiByX1K-lbQq0ZuoRCRvst8vkyZuFDmfFBaiysr9izn5c5Ag0zBXm8wgKHbT4-wEGXfZdAiLpY2WVFTsioLxZniIpOiVBIHLjCancYRg5QqK4WCe76fOj4HqszMH9GS265xM7c-76mE615_4jANybeyLCzdJE9J5asnEolkEmZgbteG4fAT5tMQT_nsWT-S8chz3HrFlpfF4VjxQfwKFQha4Qwy7TQ3Wgenc6icP1rGN2Pj27PPaKM5aBUh-TddvcGm1OtX8SZr1lWqMdPEqgtAdvvnMfo1A5570ByUbuuuR6H8NwXjsepusFBV5kG3ScJG81f-fDWugCWKLx4V4UWa1XuMDcSy4Ku01Wfz061k2zuqOPF-UozGATpQkdmc6nzETLFAqKvfDa_XDd5chgdt4NgYyJgwyLbnsGPQzFnbpa3fqhwp_Y0b29fOE7OSawJ8xfDg2nLVbGzInuK0Imv4HtTHgj-XM3HFo6E9QC33F2pT5CfsiJ_zyuDD-7jweHqTsGEtVHE1az8V0G22c8WHIOzH7-_pB31QnP9H4fAsS66FiiCw1wdG1Xiir_eTvZVpurK2y5EBJN3ve-FymnMmgOM-xRdTCJKqDrrrss1KWy=w746-h994-no?authuser=0" style="width:100%">
+             <div class="text">Megha Challenge1</div>
+           </div>
+           <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://lh3.googleusercontent.com/j6hfxnktay2SW-cl9thrWhQDtXClwQqsQ6AILSl3u-EPqdQWIOyp6lapnqgixG7X1bxonV-h582Gf8dnrAXgLJyAz0wEMJrJw-ufL-j97QlK5-IeULQbXROg4xg5blYD8NQRzpgVxqRYjrjE0FUkOzS8_BRH0v1I66e6WGltp278ebHum_jQhl7uJqzX2kLHZVXIs_FKjHUq9DGIHvAGo56R8OQCoSmurGJhxS2ammGfJWiFpatsleqxm1ZXUmMOoqjTde-3JHFiWH2E09II8YczlqsAU8q6hiMt9fibUdzTJ7Ym1-CrtizvCup6uCHFodvZSgBgpFZXRFmemawxXx6_-O771BaNIApsXbth1V6LfZ2pmeAJyuXVhVHG73JFolk5pLt-ZYi9WcMbi-pWhzuQ1yzvq4tty_OtFnXfksk5rKS1Nu8TlMS_QtHXXvtuDV9vjT7VjWkyYoYNRsQ7oqPivYjRWUboDDi1oaA8TIXvxPyizjMBmI4EhwI95LtZM78DB-E2RZt63YgYEPJRR0eH8uIquj2JJRuskiaViWu5ZE9u7zFBHmiNDheIvfL003GGJg1Y81QHrDplJsDUAxeUjeLx70dU_nIP8c7hKjrAqi3MbKyc_R3B1zxU9iEvb9_tJLWtJPfhEZazUCvXG4FHouz3hVBtnpERXrHjS0Ml1t0r69VkdAElFsIEq6pwx6p964fP9Zkfw8_DxcV3mBpq=w746-h994-no?authuser=0" style="width:100%">
+            <div class="text">Janhavi K Challenge1</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://lh3.googleusercontent.com/4g06Mq09FP2K7aCtjnTJsnB1I3_tKixLawopvkWH52NF7M-y4R_ivel65eBvFKQjr_IIQ2kKFVYVWbth6lTVTsUoJ_PePiD_vNBKtETi4w-GIKzyG_8fzdwhGQtFXV8ac06IsGwF5col4j_9VScSWxJuxX6Q6mfLuYV3dF3agDjW4djkl7xZgWTsA1vUFaZbagMHZ5bH7j3YALqWY5A3mHt1jMv1V-9Zdjxgd_ve7YZGMKwDotSr0KPkntSUKh6e1qYjs32YaTDS89tVRR35y5Gbf-UHgTJT4yVf2MEXsWxXYx1X5IPop_V91O4-i53G6ilx9sHYT6vYbGRvJwU7aTja9JoHmEHHBuOyns63BwWRMmw6EtUJW9Jq1PQy35HcCBQ52hkUb9wjCXZ62gWC2m5FKMxDIAJdKFblgbcS0MSSIcOhcpJB63Z5KtJuKYdVtItIfravBw7Cq7sESQJmfKfhpqqyXdzbzzCX0fNELUhzxngUJMYlhcDC_-Yf7DrB1rRz6xHOoOZMDddDpehJhNHQxmdf-WD1rRcfw5QGR7xSeKOAU2Scc-Plr5ezYKAcQVX0t7Ix2MWGBIny_dtv9BJTLvVfABzjNj4LV702-O0NJgOS-IMoZqhABF7kqNWxYJKcvfFdyr22oWBCF2qaQVgD6455qCGMxutegnD6W5MFFeqSZHjOLQcG1s-jYIyeVT8pwAfjjP1XuXSs3o1Uyur2=w746-h994-no?authuser=0" style="width:100%">
+            <div class="text">Jahnavi Inamdar Challenge1</div>
+          </div>
+         
+           <!-- Next and previous buttons -->
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         
+         <!-- The dots/circles -->
+         <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+         
+            
+           
+            
+         <button><a href="https://grabpoll.com/710" target="_blank">Vote here</a></button>
+        </div>
+        <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+        </script>
+    </body>
+</html>
